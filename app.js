@@ -200,7 +200,7 @@ async function getMovies(page) {
       }
       case 'first-cell': {
         page = +firstCell.textContent;
-        if ( (page + 2) == movies.total_pages) showLast();
+        if ( ( (page + 2) == movies.total_pages) || ( (page + 3) == movies.total_pages)) showLast();
         if (page == 1 && getSelected() == 'first-cell') break;
         else if (page == 1) {
           clearMovies();

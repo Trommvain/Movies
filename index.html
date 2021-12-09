@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="detail-modal-backdrop"></div>
+    <section class="my-account-backdrop"></section>
+
+    <header class="header">
+        <img class="site-logo" src="pictures/site_logo.png" alt="logo">
+        <span class="site-name">Movies</span>
+        <div class="my-account-btn">
+            <p class="my-account-text">My Account</p>
+            <img class="my-account-pic" src="pictures/arrow.png" alt="">
+        </div>
+    </header>
+    <section class="section-name">Latest Releases</section>
+    <p class="placeholder">Loading...</p>
+    <main class="movies"></main>
+    <section class="pagination">
+        <div id="first" class="pagination-btn">First</div>
+        <div id="prev" class="pagination-btn">Prev</div>
+        <div id="ellipsis-first" class="pagination-btn">&#8230;</div>
+        <div id="first-cell" class="pagination-btn">1</div>
+        <div id="second-cell" class="pagination-btn">2</div>
+        <div id="third-cell" class="pagination-btn">3</div>
+        <div id="ellipsis-last" class="pagination-btn">&#8230;</div>
+        <div id="next" class="pagination-btn">Next</div>
+        <div id="last" class="pagination-btn">Last</div>
+    </section>
+    <div class="detail-modal">
+        <nav class="navigation">
+            <img src="pictures/arrow_left.png" class="back-arrow">
+            <img src="pictures/arrow_left_no_circle.png" class="back-arrow-mobile">
+            <span class="back-text">Back to list</span>
+            <span class="back-text-mobile">Back</span>
+            <span class="next-text">Next Movie</span>
+            <span class="next-text-mobile">Next</span>
+            <img src="pictures/arrow_right.png" class="next-arrow">
+            <img src="pictures/arrow_right_no_circle.png" class="next-arrow-mobile">
+        </nav>
+        <div class="favorite-btn">Add to favorite</div>
+        <div class="favorite-btn-mobile">
+            <img src="pictures/star.png">
+        </div>
+        <section class="flex-container">
+            <div class="modal-pic"></div>
+            <div class="modal-info">
+                <span class="text title"></span>
+                <br>
+                <span class="text info score">Score:&nbsp;</span>
+                <br>
+                <span class="text info score value"></span>
+                <br>
+                <span class="text info rating">Rating:&nbsp;</span>
+                <br>
+                <span class="text info rating value"></span>
+                <br>
+                <span class="text info date">Release date:&nbsp;</span>
+                <br>
+                <span class="text info date value"></span>
+               <hr class="regular-hr">
+                <div class="text description"></div>
+               <hr class="regular-hr">
+            </div>
+        </section>
+        <span class="mobile-title"></span>
+        <hr class="mobile-hr">
+        <div class="mobile-description"></div>
+        <hr class="mobile-hr">
+    </div>
+    <div class="my-favorite">
+        <section class="section-name">My Favorite</section>
+        <p class="placeholder">Nothing's here yet...</p>
+    </div>
+</body>
+</html>

@@ -515,7 +515,7 @@ async function getMovies(page) {
 
   function checkMovie() {
     favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies"));
-    if(favoriteMovies.length == 0 || favoriteMovies == null) return false;
+    if( !favoriteMovies || !favoriteMovies.length) return false;
       else {
         for (let i = 0; i < favoriteMovies.length; i++) {
           if (modalMovieInfo.id == favoriteMovies[i].id) return true;
